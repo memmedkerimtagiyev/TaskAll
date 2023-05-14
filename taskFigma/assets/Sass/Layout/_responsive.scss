@@ -1,0 +1,338 @@
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    nav {
+        .container {
+            .nav-container {
+                .nav-container-list {
+                    display: none;
+                }
+
+                .nav-container-btn {
+                    display: none;
+                }
+
+                .icon {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .open {
+        height: 130px;
+    }
+
+    #modern-studio {
+        .container {
+            padding-left: 20px;
+
+            .modern-studio-container {
+                display: flex;
+                flex-direction: column-reverse;
+                gap: 10px;
+
+                .left-part {
+                    width: 100%;
+                    display: flex;
+                    gap: 30px;
+                }
+
+                .right-part {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    #experience {
+        .container {
+            padding-left: 20px;
+            padding-right: 20px;
+
+            .experience-container {
+                display: flex;
+                flex-direction: column;
+
+                .left-part {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    #yearsOfExperience {
+        .container {
+            .exp-container {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    #work {
+        .container {
+            .work-container {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                .left-part {
+                    width: 100% !important;
+                    padding: 10px 20px;
+                }
+
+                .right-part {
+                    width: 100% !important;
+                    padding: 10px 20px;
+                }
+            }
+        }
+    }
+
+    #video {
+        .container {
+            .video-container {
+                display: flex;
+                flex-direction: column;
+
+            }
+        }
+    }
+
+    #Features {
+        .container {
+            flex-direction: column-reverse;
+        }
+    }
+
+    #GiveYourSite {
+        .container {
+            padding: 20px;
+            flex-direction: column;
+
+            .right-box {
+                display: flex;
+                justify-content: center !important;
+            }
+        }
+    }
+
+    #LongRun {
+        .container {
+            flex-direction: column;
+            align-items: center !important;
+            justify-content: center !important;
+
+            .box {
+                max-width: 336px !important;
+                width: 100% !important;
+            }
+        }
+    }
+
+    #MakingComplex {
+        .container {
+            flex-direction: column;
+        }
+    }
+
+    #HowOurAgency {
+        .container {
+            .boxs {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    #LatestWork {
+        .container {
+            .portfolio {
+                .links {
+                    display: none !important;
+                }
+
+                select {
+                    display: block !important;
+                }
+            }
+
+            .imgs {
+                gap: 25px !important;
+
+                .img-top {
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 30px;
+
+                    .img {
+                        display: flex;
+                        border: solid red;
+                        max-width: 300px;
+                        width: 100%;
+                        height: 416px;
+                        overflow: hidden;
+                        position: relative;
+
+                        button {
+                            position: absolute;
+                            left: 30px !important;
+                        }
+
+                        h3 {
+                            left: 30px !important;
+                        }
+                    }
+                }
+
+                .img-bottom {
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 30px;
+
+                    .img {
+                        display: flex;
+                        max-width: 300px;
+                        width: 100%;
+                        height: 416px;
+                        overflow: hidden;
+
+                        button {
+                            position: absolute;
+                            left: 30px !important;
+                        }
+
+                        h3 {
+                            left: 30px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #WeHelp {
+        .container {
+            .boxs {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    #ExploreFuture {
+        .container {
+            .boxs {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+
+    #TeamOf {
+        .container {
+
+            .ourTeam-cont {
+                display: flex;
+                justify-content: center !important;
+
+                .click-icon {
+                    display: none !important;
+                }
+            }
+
+            .person-info {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .person-boxs {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+
+    #WhatOur {
+        .container {
+            .clentsBoxs {
+                flex-direction: column;
+
+                .two-box-cont {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+
+    #CheckOur {
+        .container {
+            .CheckOur {
+                align-items: center;
+            }
+
+            .checkOurBoxs {
+                flex-direction: column;
+                align-items: center !important;
+                justify-content: center;
+
+                .box {
+                    max-width: 391px !important;
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+
+    #FrequentlyAsked {
+        .container {
+            .FrequentlyAskedAn {
+                flex-direction: column;
+
+                .frequently {
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    #OurAwards {
+        .container {
+            .OurAwardsBoxs {
+                .OurAwardsBox {
+                    border: solid;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    .imgText {
+                        flex-direction: column;
+                    }
+
+                    .linkIcon {
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+
+    #LatestBlog {
+        .container {
+            .LatestBlogContainer {
+                flex-direction: column;
+            }
+            .LatestBlogBoxs{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}

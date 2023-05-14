@@ -1,0 +1,96 @@
+nav {
+    background-color:
+        #28293E;
+    color: white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        width: 100%;
+        max-width: 1240px;
+        margin: 0 auto;
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .nav-container-title {
+                .img-h1 {
+                    color: red;
+                    display: flex;
+                    gap: 20px;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                // .resp-list {
+                //     background-color: green;
+                //     display: none;
+                // }
+
+                // .open {
+                //     display: block;
+                // }
+            }
+
+            .nav-container-list {
+                ul {
+                    display: flex;
+                    gap: 100px;
+
+                    li {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .nav-container-btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+
+                button {
+                    background-color: #28293E;
+                    width: 138px;
+                    height: 48px;
+                    border: 1px solid #6A6C8E;
+                    color: white;
+                    border-radius: 6px;
+                    cursor: pointer;
+                }
+            }
+
+            .icon {
+                display: none;
+
+                i {
+                    border: 2px solid #6A6C8E;
+                    padding: 10px 20px;
+                    border-radius: 6px;
+                    color: #6A6C8E;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+            
+
+.resp-list {
+    background-color:
+        #28293E;
+    color: white;
+    height: 0px;
+    transition: 300ms;
+    overflow: hidden;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

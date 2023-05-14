@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Renkli Butonlar</title>
+    <style type="text/css">
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .button.red {
+            background-color: #ff5733;
+        }
+
+        .button.green {
+            background-color: #00cc44;
+        }
+
+        .button.blue {
+            background-color: #0080ff;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button class="button red">Kırmızı</button>
+        <button class="button green">Yeşil</button>
+        <button class="button blue">Mavi</button>
+    </div>
+
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+    <script type="text/javascript">
+        const redButton = document.querySelector('.red');
+        const greenButton = document.querySelector('.green');
+        const blueButton = document.querySelector('.blue');
+        const box = document.querySelector('.box');
+
+        redButton.addEventListener('click', () => {
+            box.style.backgroundColor = '#ff5733';
+        });
+
+        greenButton.addEventListener('click', () => {
+            box.style.backgroundColor = '#00cc44';
+        });
+
+        blueButton.addEventListener('click', () => {
+            box.style.backgroundColor = '#0080ff';
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+body{
+    background-color: orangered;
+}
+h1{
+    font-family:sans-serif;
+    color: white;
+    text-align: center;
+}
+p{
+    font-size: 17px;
+    font-family:sans-serif;
+    text-align: center;
+    color: white;
+}
+button{
+    border: 0px;
+    border-radius: 30px;
+    margin-left: 370px;
+    font-weight: bold;
+    font-size:15px;
+    width: 180px;
+    height: 60px;
+}
+hr{
+    width: 60px;
+    height: 3px;
+    background-color: white;
+}
+div{
+    margin: 300px;
+}

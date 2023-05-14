@@ -1,0 +1,185 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+body {
+  background-color: bisque;
+}
+
+nav {
+  background-color: white;
+}
+nav .nav-container {
+  max-width: 1200px;
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-container .icon-bar {
+  display: none;
+}
+nav .nav-container .nav-title h1 {
+  color: #007bff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+nav .nav-container .nav-list {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  height: 100%;
+}
+nav .nav-container .nav-list #nav-conten-list {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+nav .nav-container .nav-list #nav-conten-list li a {
+  height: 100%;
+  padding: 10px;
+  color: black;
+}
+nav .nav-container .nav-list #nav-conten-list .drop1-li {
+  transition: 0.6s;
+}
+nav .nav-container .nav-list #nav-conten-list .drop1-li:hover #dropOne {
+  display: block;
+}
+nav .nav-container .nav-list #nav-conten-list .drop1-li a .fa-solid {
+  margin-left: 10px;
+}
+nav .nav-container .nav-list #nav-conten-list #dropOne {
+  display: none;
+  max-width: 200px;
+  width: 100%;
+  border-top: 2px solid #007bff;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+}
+nav .nav-container .nav-list #nav-conten-list #dropOne .dropOne-list li {
+  padding: 10px;
+}
+nav .nav-container .nav-list #nav-conten-list #dropOne .dropOne-list li:hover {
+  background-color: #f2f2f2;
+}
+nav .nav-container .nav-list #nav-conten-list #dropOne .dropOne-list .drop2-li:hover #dropTwo {
+  display: block;
+}
+nav .nav-container .nav-list #nav-conten-list #dropOne .dropOne-list .drop2-li a .fa-solid {
+  transform: rotate(-90deg);
+  margin-left: 50px;
+}
+nav .nav-container .nav-list #nav-conten-list #dropOne .dropOne-list #dropTwo {
+  display: none;
+  border-top: 2px solid #007bff;
+  position: absolute;
+  z-index: 1;
+  max-width: 200px;
+  width: 100%;
+  background-color: white;
+  left: 200px;
+  bottom: -119px;
+}
+
+#responsive-list {
+  overflow: hidden;
+  display: none;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background-color: white;
+  width: 0px;
+  transition: 0.3s;
+}
+#responsive-list #nav-resp-conten-list #icon-cont #X-icon {
+  margin-left: 230px;
+  font-size: 30px;
+  padding: 20px;
+}
+#responsive-list #nav-resp-conten-list li a {
+  width: 100%;
+  padding: 10px 20px;
+  color: black;
+  font-size: 20px;
+  transition: 0.3s;
+}
+#responsive-list #nav-resp-conten-list li a:hover {
+  color: #007bff;
+}
+#responsive-list #nav-resp-conten-list .drop1-li-res .icon-arrow {
+  display: inline;
+  margin-left: 130px;
+}
+#responsive-list #nav-resp-conten-list .drop1-li-res .icon-arrow #ox {
+  padding: 7px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+#responsive-list #nav-resp-conten-list .drop1-li-res #dropOne-res {
+  margin-left: 20px;
+  overflow: hidden;
+  height: 0;
+}
+#responsive-list #nav-resp-conten-list .drop1-li-res #dropOne-res .dropOne-list-res li a {
+  font-size: 15px;
+}
+#responsive-list #nav-resp-conten-list .drop1-li-res #dropOne-res .dropOne-list-res .drop2-li-res .icon-arrow2 {
+  display: inline;
+  margin-left: 120px;
+}
+#responsive-list #nav-resp-conten-list .drop1-li-res #dropOne-res .dropOne-list-res .drop2-li-res .icon-arrow2 #ox2 {
+  padding: 7px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+#responsive-list #nav-resp-conten-list .drop1-li-res #dropOne-res .dropOne-list-res .drop2-li-res #dropTwo-res {
+  margin-left: 20px;
+  overflow: hidden;
+  height: 0;
+}
+
+.open {
+  height: 100% !important;
+  transition: 0.3s !important;
+}
+
+.transform {
+  transform: rotate(-180deg);
+}
+
+@media screen and (max-width: 991px) {
+  nav .nav-container {
+    width: 80%;
+  }
+  nav .nav-container .icon-bar {
+    display: block;
+    font-size: 30px;
+    color: #007bff;
+  }
+  nav .nav-container .nav-list {
+    display: none;
+  }
+  #responsive-list {
+    display: block;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,28 @@
+@media screen and (max-width:991px) {
+
+    nav {
+        .nav-container {
+            width: 80%;
+
+            .icon-bar {
+                display: block;
+                font-size: 30px;
+                color: #007bff;
+            }
+
+            .nav-list {
+                display: none;
+            }
+        }
+    }
+
+    #responsive-list{
+        display: block;
+        #nav-resp-conten-list {
+            
+        }
+       
+    }
+
+
+}

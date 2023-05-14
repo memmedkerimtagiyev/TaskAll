@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    color: #fff;
+    background-image: url('imgs/depositphotos_291703040-stock-photo-hanbulan-reservoir-near-the-city.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgb(0,0,0,.7);
+    height: 100vh;
+}
+.header{
+    padding: 50px 20px 30px 20px;
+}
+.header h1{
+    font-size: 70px;
+    color: yellow;
+    text-shadow: 1px 3px rgb(0,0,0,.9);
+}
+.header input{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 10px;
+/* background: transparent; */
+    border-bottom: 2px solid yellow;
+    text-align: center;
+    font-size: 20px;
+    color: #f2f2f2;
+}
+.city{
+    font-size: 45px;
+    font-weight:700 ;
+    text-shadow: 1px 3px rgb(0,0,0,.9);
+    margin-bottom: 10px;
+}
+.temp{
+    font-size: 75px;
+    font-weight:600 ;
+    text-shadow: 1px 3px rgb(0,0,0,1);
+    margin-bottom: 10px;
+}
+.desc{
+    font-size: 40px;
+    font-style: italic;
+    text-shadow: 1px 3px rgb(0,0,0,.9);
+    margin-bottom: 10px;
+}
+.minMax{
+    font-size: 25px;
+    text-shadow: 1px 3px rgb(0,0,0,9);
+}
