@@ -1,8 +1,21 @@
 body {
-    background-color: bisque;
+    background-image: url(https://preview.colorlib.com/theme/bootstrap/website-menu-04/images/hero_1.jpg.webp);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+header {
+    position: relative;
 }
 
 nav {
+    position: sticky;
+    top: 10px;
+    width: 100%;
     background-color: white;
 
 
@@ -54,11 +67,13 @@ nav {
 
                 .drop1-li {
                     transition: 0.6s;
+
                     &:hover #dropOne {
                         display: block;
                     }
-                    a{
-                        .fa-solid{
+
+                    a {
+                        .fa-solid {
                             margin-left: 10px;
                         }
                     }
@@ -88,9 +103,9 @@ nav {
                                 display: block;
                             }
 
-                            a{
-                                .fa-solid{
-                                    transform:rotate(-90deg);
+                            a {
+                                .fa-solid {
+                                    transform: rotate(-90deg);
                                     margin-left: 50px;
                                 }
                             }
@@ -129,19 +144,19 @@ nav {
     transition: 0.3s;
 
     #nav-resp-conten-list {
-      //  border: 1px solid black;
+        //  border: 1px solid black;
 
 
         #icon-cont {
-          #X-icon{
-            margin-left: 230px;
-            font-size: 30px;
-            padding: 20px;
-          }
+            #X-icon {
+                margin-left: 230px;
+                font-size: 30px;
+                padding: 20px;
+            }
         }
 
         li {
-          //  border: 1px solid black;
+            //  border: 1px solid black;
 
             // &:hover a {
             //     color: #007bff;
@@ -149,12 +164,13 @@ nav {
 
             a {
                 width: 100%;
-              //  border: 1px solid black;
+                //  border: 1px solid black;
                 padding: 10px 20px;
                 color: black;
                 font-size: 20px;
                 transition: 0.3s;
-                &:hover{
+
+                &:hover {
                     color: #007bff;
                 }
             }
@@ -165,17 +181,18 @@ nav {
             .icon-arrow {
                 display: inline;
                 margin-left: 130px;
+
                 #ox {
                     padding: 7px;
                     border-radius: 50%;
                     transition: 0.5s;
-                   
+
                 }
             }
 
             #dropOne-res {
                 margin-left: 20px;
-            //    border: 1px solid red;
+                //    border: 1px solid red;
                 overflow: hidden;
                 height: 0;
 
@@ -190,6 +207,7 @@ nav {
                         .icon-arrow2 {
                             display: inline;
                             margin-left: 120px;
+
                             #ox2 {
                                 padding: 7px;
                                 border-radius: 50%;
@@ -199,7 +217,7 @@ nav {
 
                         #dropTwo-res {
                             margin-left: 20px;
-                //            border: 1px solid red;
+                            //            border: 1px solid red;
                             overflow: hidden;
                             height: 0;
                         }
@@ -216,6 +234,7 @@ nav {
     height: 100% !important;
     transition: 0.3s !important;
 }
-.transform{
+
+.transform {
     transform: rotate(-180deg);
 }
