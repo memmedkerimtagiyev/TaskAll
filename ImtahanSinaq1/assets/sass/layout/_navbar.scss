@@ -1,0 +1,181 @@
+header {
+    #contact {
+        min-height: 50px;
+        height: 100%;
+        background-color: #994038;
+        display: flex;
+        align-items: center;
+
+        .container {
+
+            display: flex;
+            justify-content: space-between;
+
+            .socialMedia {
+                display: flex;
+                align-items: center;
+
+                a {
+                    color: black;
+                    margin: 0 10px;
+                }
+            }
+
+            .login {
+                a {
+                    color: black;
+                    margin: 0 10px;
+
+                    &:hover {
+                        color: white;
+                    }
+                }
+
+                .login {
+                    padding: 10px 15px;
+                    background-color: yellow;
+                }
+            }
+        }
+    }
+
+    nav {
+        min-height: 100px;
+        display: flex;
+        align-items: center;
+
+        .container {
+            .nav-content {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .navList {
+                    ul {
+                        display: flex;
+                        align-items: center;
+
+                        li {
+                            a {
+                                color: black;
+                                padding: 20px;
+
+                                i {
+                                    padding: 0 0 0 10px;
+                                }
+                            }
+                        }
+
+                        .dropdown {
+                           position: relative;
+
+                            &:hover .dropList {
+                                display: block !important;
+                            }
+
+                            .dropList {
+                                border: solid;
+                                display: none;
+                                position: absolute;
+                                width: 200px;
+                                border-radius: 10px;
+                                //    z-index: 1;
+                                background-color: white;
+                                overflow: hidden;
+
+                                ul {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-end;
+
+                                    li {
+                                        a {
+                                            width: 200px;
+
+                                            &:hover {
+                                                color: white;
+                                                background-color: #994038;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .barIcon {
+                    display: none;
+                    border: 2px solid;
+                    padding: 10px 15px;
+                    border-radius: 6px;
+                }
+            }
+            .nav-respo{
+                display: none;
+                height: 0px;
+                overflow: hidden;
+                ul{
+                    padding: 0;
+                    li{
+                        a{
+                            width: 100%;
+                            padding: 10px 0;
+                            color: black;
+
+                        }
+                    }
+                    .dropdown{
+
+                        &:hover .dropList {
+                            display: block !important;
+                        }
+                        .dropList{
+                            border: 1px solid;
+                            display: none;
+                            width: 95%;
+                            margin: 0 auto;
+                            border-radius: 10px;
+                            //    z-index: 1;
+                            background-color: white;
+                            overflow: hidden;
+                            ul{
+                                li{
+                                    a{
+                                        padding-left: 10px;
+                                        &:hover{
+                                            background-color: #994038;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .barOpenJs{
+            height: 100% !important;
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        .container {
+            .nav-content{
+                .navList {
+                    display: none;
+                }
+    
+                .barIcon {
+                    display: block !important;
+                }
+            }
+            .nav-respo{
+                display: block !important;
+            }
+        }
+    }
+}

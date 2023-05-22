@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul li {
+  list-style: none;
+}
+
+.container {
+  max-width: 80%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+header #contact {
+  min-height: 50px;
+  height: 100%;
+  background-color: #994038;
+  display: flex;
+  align-items: center;
+}
+header #contact .container {
+  display: flex;
+  justify-content: space-between;
+}
+header #contact .container .socialMedia {
+  display: flex;
+  align-items: center;
+}
+header #contact .container .socialMedia a {
+  color: black;
+  margin: 0 10px;
+}
+header #contact .container .login a {
+  color: black;
+  margin: 0 10px;
+}
+header #contact .container .login a:hover {
+  color: white;
+}
+header #contact .container .login .login {
+  padding: 10px 15px;
+  background-color: yellow;
+}
+header nav {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+}
+header nav .container .nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .container .nav-content .navList ul {
+  display: flex;
+  align-items: center;
+}
+header nav .container .nav-content .navList ul li a {
+  color: black;
+  padding: 20px;
+}
+header nav .container .nav-content .navList ul li a i {
+  padding: 0 0 0 10px;
+}
+header nav .container .nav-content .navList ul .dropdown {
+  position: relative;
+}
+header nav .container .nav-content .navList ul .dropdown:hover .dropList {
+  display: block !important;
+}
+header nav .container .nav-content .navList ul .dropdown .dropList {
+  border: solid;
+  display: none;
+  position: absolute;
+  width: 200px;
+  border-radius: 10px;
+  background-color: white;
+  overflow: hidden;
+}
+header nav .container .nav-content .navList ul .dropdown .dropList ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+header nav .container .nav-content .navList ul .dropdown .dropList ul li a {
+  width: 200px;
+}
+header nav .container .nav-content .navList ul .dropdown .dropList ul li a:hover {
+  color: white;
+  background-color: #994038;
+}
+header nav .container .nav-content .barIcon {
+  display: none;
+  border: 2px solid;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+header nav .container .nav-respo {
+  display: none;
+  height: 0px;
+  overflow: hidden;
+}
+header nav .container .nav-respo ul {
+  padding: 0;
+}
+header nav .container .nav-respo ul li a {
+  width: 100%;
+  padding: 10px 0;
+  color: black;
+}
+header nav .container .nav-respo ul .dropdown:hover .dropList {
+  display: block !important;
+}
+header nav .container .nav-respo ul .dropdown .dropList {
+  border: 1px solid;
+  display: none;
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: white;
+  overflow: hidden;
+}
+header nav .container .nav-respo ul .dropdown .dropList ul li a {
+  padding-left: 10px;
+}
+header nav .container .nav-respo ul .dropdown .dropList ul li a:hover {
+  background-color: #994038;
+}
+header nav .barOpenJs {
+  height: 100% !important;
+}
+
+@media screen and (max-width: 768px) {
+  nav .container .nav-content .navList {
+    display: none;
+  }
+  nav .container .nav-content .barIcon {
+    display: block !important;
+  }
+  nav .container .nav-respo {
+    display: block !important;
+  }
+}
+#StepsToAdopt {
+  margin: 100px 0;
+}
+#StepsToAdopt .container {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+#StepsToAdopt .container .cartLeft {
+  width: 50%;
+}
+#StepsToAdopt .container .cartLeft img {
+  border: 1px solid;
+  max-width: 400px;
+  width: 100%;
+}
+#StepsToAdopt .container .cartLeft p {
+  max-width: 400px;
+  width: 100%;
+  margin: 20px 0;
+}
+#StepsToAdopt .container .cartLeft button {
+  margin: 20px 0;
+  width: 200px;
+  height: 50px;
+  border: 2px solid chocolate;
+  border-radius: 6px;
+  color: chocolate;
+  background-color: white;
+  font-size: 16px;
+}
+#StepsToAdopt .container .cartLeft button:hover {
+  background-color: chocolate;
+  color: white;
+}
+#StepsToAdopt .container .cartRight {
+  width: 50%;
+}
+#StepsToAdopt .container .cartRight h2 {
+  margin: 0 0 30px 0;
+}
+#StepsToAdopt .container .cartRight .stepList .cartSteps {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border: 1px solid;
+  border-radius: 6px;
+  height: 45px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+#StepsToAdopt .container .cartRight .stepList .cartSteps .cartHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#StepsToAdopt .container .cartRight .stepList .cartSteps p {
+  padding-top: 10px;
+}
+#StepsToAdopt .openjsSteps {
+  height: 150px !important;
+}
+
+#WaitinChildren {
+  background-color: #e0e7ef;
+}
+#WaitinChildren .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+#WaitinChildren .container p {
+  max-width: 600px;
+  text-align: center;
+}
+#WaitinChildren .container button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: orangered;
+  color: white;
+}
+#WaitinChildren .container .childrenBox {
+  margin: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#WaitinChildren .container .childrenBox .childBox {
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  border: solid black;
+  transition: box-shadow 0.3s ease-in-out;
+  overflow: hidden;
+}
+#WaitinChildren .container .childrenBox .childBox:hover {
+  box-shadow: 5px 5px rgba(61, 57, 57, 0.8);
+}
+#WaitinChildren .container .childrenBox .childBox:hover img {
+  transform: scale(1.1);
+}
+#WaitinChildren .container .childrenBox .childBox .photo {
+  overflow: hidden;
+}
+#WaitinChildren .container .childrenBox .childBox .photo img {
+  width: 100%;
+  transition: 0.4s ease;
+}
+#WaitinChildren .container .childrenBox .childBox a {
+  padding: 15px 10px;
+}
+#WaitinChildren .container .childrenBox .childBox a span {
+  opacity: 0.5;
+}
+
+#FeaturesStories {
+  margin: 100px 0;
+}
+#FeaturesStories .container {
+  text-align: center;
+}
+#FeaturesStories .container .storiCards {
+  display: flex;
+  flex-wrap: wrap;
+}
+#FeaturesStories .container .storiCards .storiCard {
+  width: 367px;
+  height: 300px;
+  border: solid rgb(218, 147, 147);
+  transition: box-shadow 0.3s ease-in-out;
+  overflow: hidden;
+  position: relative;
+}
+#FeaturesStories .container .storiCards .storiCard:hover img {
+  transform: scale(1.1);
+}
+#FeaturesStories .container .storiCards .storiCard img {
+  width: 100%;
+  transition: 0.4s ease;
+  position: relative;
+  z-index: -10 !important;
+}
+#FeaturesStories .container .storiCards .storiCard .opacity {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.8;
+}/*# sourceMappingURL=main.css.map */

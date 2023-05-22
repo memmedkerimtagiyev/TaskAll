@@ -1,0 +1,222 @@
+// #slide{
+//     #carouselExampleCaptions{
+//         .carousel-inner{
+//             .carousel-item{
+//                 img{
+//                     height: 95vh;
+//                 }
+//                 .text{
+
+//                     max-width: 450px;
+//                     color: black;
+//                     position: absolute;
+//                     top: 200px;
+//                     display: flex;
+//                     flex-direction: column;
+//                     text-align: start;
+//                 }
+//             }
+//         }
+//     }
+//     @media screen and (max-width: 768px){
+//         #carouselExampleCaptions{
+//             .carousel-inner{
+//                 .carousel-item{
+//                     img{
+//                         height: 95vh;
+//                     }
+//                     .text{
+
+//                        display: block !important;
+
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+#StepsToAdopt {
+    margin: 100px 0;
+
+    .container {
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+
+        .cartLeft {
+            width: 50%;
+
+            img {
+                border: 1px solid;
+                max-width: 400px;
+                width: 100%;
+            }
+
+            p {
+                max-width: 400px;
+                width: 100%;
+                margin: 20px 0;
+            }
+
+            button {
+                margin: 20px 0;
+                width: 200px;
+                height: 50px;
+                border: 2px solid chocolate;
+                border-radius: 6px;
+                color: chocolate;
+                background-color: white;
+                font-size: 16px;
+
+                &:hover {
+                    background-color: chocolate;
+                    color: white;
+                }
+            }
+        }
+
+        .cartRight {
+            width: 50%;
+
+            h2 {
+                margin: 0 0 30px 0;
+            }
+
+            .stepList {
+                .cartSteps {
+                    margin-bottom: 20px;
+                    padding: 10px 20px;
+                    border: 1px solid;
+                    border-radius: 6px;
+                    height: 45px;
+                    overflow: hidden;
+                    transition: 0.5s;
+
+                    .cartHead {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+
+                    p {
+                        padding-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .openjsSteps {
+        height: 150px !important;
+    }
+}
+
+#WaitinChildren {
+    background-color: #e0e7ef;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        p {
+            max-width: 600px;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 6px;
+            background-color: orangered;
+            color: white;
+        }
+
+        .childrenBox {
+            margin: 50px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            .childBox {
+                width: 300px;
+                background-color: white;
+                border-radius: 10px;
+                border: solid black;
+                transition: box-shadow 0.3s ease-in-out;
+                overflow: hidden;
+
+                &:hover {
+                    box-shadow: 5px 5px rgba(61, 57, 57, 0.8);
+                }
+
+                &:hover img {
+                    transform: scale(1.1);
+                }
+
+                .photo {
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        transition: 0.4s ease;
+                    }
+                }
+
+                a {
+                    padding: 15px 10px;
+
+                    span {
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#FeaturesStories {
+    margin: 100px 0;
+
+    .container {
+        text-align: center;
+
+        .storiCards {
+            display: flex;
+            flex-wrap: wrap;
+
+            .storiCard {
+                width: 367px;
+                height: 300px;
+                border: solid rgb(218, 147, 147);
+                transition: box-shadow 0.3s ease-in-out;
+                overflow: hidden;
+                position: relative;
+//                 background-image: url("https://preview.colorlib.com/theme/adopted/img/work_thumb_2.jpg");
+//                 background-repeat: no-repeat;
+//                 background-attachment: fixed;
+//   background-position: 50% 50%;
+                &:hover img{
+                    transform: scale(1.1);
+                }
+
+                img {
+                    width: 100%;
+                    transition: 0.4s ease;
+                    position: relative;
+                    z-index: -10 !important;
+                }
+                .opacity{
+                    position: absolute;
+                    z-index: 1;
+                    width: 100%;
+                    height: 100%;
+                    background-color: black;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
