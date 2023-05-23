@@ -20,6 +20,59 @@ ul li {
   padding: 0;
 }
 
+footer {
+  background-color: rgb(148, 47, 10);
+}
+footer .container #about-adres {
+  display: flex;
+  justify-content: space-between;
+}
+footer .container #about-adres .cardAd {
+  width: 25%;
+  font-size: 14px;
+  color: white;
+}
+footer .container #about-adres .about p {
+  margin: 20px 0;
+  opacity: 0.7;
+}
+footer .container #about-adres .about a {
+  color: white;
+}
+footer .container #about-adres .CONTACT .adres {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+footer .container #about-adres .CONTACT .adres span {
+  opacity: 0.5;
+}
+footer .container #about-adres .CONTACT .adres a {
+  color: white;
+}
+footer .container #about-adres .QUICK ul {
+  padding: 0;
+}
+footer .container #about-adres .QUICK ul li {
+  margin-top: 10px;
+}
+footer .container #about-adres .QUICK ul li a {
+  color: gold;
+}
+footer .container #about-adres .SOCIAL .socialMediaFooter a {
+  border: 1px solid gray;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+footer .container #about-adres .SOCIAL .socialMediaFooter a i {
+  color: gold;
+}
+
 header #contact {
   min-height: 50px;
   height: 100%;
@@ -107,6 +160,7 @@ header nav .container .nav-content .barIcon {
 header nav .container .nav-respo {
   display: none;
   height: 0px;
+  transition: 0.5s;
   overflow: hidden;
 }
 header nav .container .nav-respo ul {
@@ -150,6 +204,27 @@ header nav .barOpenJs {
     display: block !important;
   }
 }
+#slide #carouselExampleCaptions .carousel-inner .carousel-item img {
+  height: 95vh;
+}
+#slide #carouselExampleCaptions .carousel-inner .carousel-item .text {
+  max-width: 450px;
+  color: black;
+  position: absolute;
+  top: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+@media screen and (max-width: 768px) {
+  #slide #carouselExampleCaptions .carousel-inner .carousel-item img {
+    height: 95vh;
+  }
+  #slide #carouselExampleCaptions .carousel-inner .carousel-item .text {
+    display: block !important;
+  }
+}
+
 #StepsToAdopt {
   margin: 100px 0;
 }
@@ -205,11 +280,18 @@ header nav .barOpenJs {
   align-items: center;
   justify-content: space-between;
 }
+#StepsToAdopt .container .cartRight .stepList .cartSteps .cartHead i {
+  transition: 0.5s;
+}
 #StepsToAdopt .container .cartRight .stepList .cartSteps p {
   padding-top: 10px;
 }
 #StepsToAdopt .openjsSteps {
   height: 150px !important;
+}
+#StepsToAdopt .trans {
+  transform: rotate(-180deg);
+  color: orangered;
 }
 
 #WaitinChildren {
@@ -300,4 +382,43 @@ header nav .barOpenJs {
   height: 100%;
   background-color: black;
   opacity: 0.8;
+}
+
+#getNewsUpdates {
+  padding: 50px 0;
+  background-color: #e0e7ef;
+}
+#getNewsUpdates .container form {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+#getNewsUpdates .container form input {
+  max-width: 300px;
+  width: 100%;
+  height: 50px;
+  border-radius: 6px;
+}
+#getNewsUpdates .container form .nameInp {
+  padding-left: 20px;
+}
+#getNewsUpdates .container form .emailInp {
+  padding-left: 20px;
+}
+#getNewsUpdates .container form .btnInp {
+  background-color: orangered;
+  color: white;
+  border: none;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  #getNewsUpdates .container form {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  #getNewsUpdates .container form input {
+    max-width: 100% !important;
+  }
 }/*# sourceMappingURL=main.css.map */

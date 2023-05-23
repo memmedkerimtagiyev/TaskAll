@@ -1,40 +1,43 @@
-// #slide{
-//     #carouselExampleCaptions{
-//         .carousel-inner{
-//             .carousel-item{
-//                 img{
-//                     height: 95vh;
-//                 }
-//                 .text{
+#slide {
+    #carouselExampleCaptions {
+        .carousel-inner {
+            .carousel-item {
+                img {
+                    height: 95vh;
+                }
 
-//                     max-width: 450px;
-//                     color: black;
-//                     position: absolute;
-//                     top: 200px;
-//                     display: flex;
-//                     flex-direction: column;
-//                     text-align: start;
-//                 }
-//             }
-//         }
-//     }
-//     @media screen and (max-width: 768px){
-//         #carouselExampleCaptions{
-//             .carousel-inner{
-//                 .carousel-item{
-//                     img{
-//                         height: 95vh;
-//                     }
-//                     .text{
+                .text {
 
-//                        display: block !important;
+                    max-width: 450px;
+                    color: black;
+                    position: absolute;
+                    top: 200px;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: start;
+                }
+            }
+        }
+    }
 
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
+    @media screen and (max-width: 768px) {
+        #carouselExampleCaptions {
+            .carousel-inner {
+                .carousel-item {
+                    img {
+                        height: 95vh;
+                    }
+
+                    .text {
+
+                        display: block !important;
+
+                    }
+                }
+            }
+        }
+    }
+}
 
 #StepsToAdopt {
     margin: 100px 0;
@@ -97,6 +100,10 @@
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
+
+                        i {
+                            transition: 0.5s;
+                        }
                     }
 
                     p {
@@ -109,6 +116,11 @@
 
     .openjsSteps {
         height: 150px !important;
+    }
+
+    .trans {
+        transform: rotate(-180deg);
+        color: orangered;
     }
 }
 
@@ -194,11 +206,12 @@
                 transition: box-shadow 0.3s ease-in-out;
                 overflow: hidden;
                 position: relative;
-//                 background-image: url("https://preview.colorlib.com/theme/adopted/img/work_thumb_2.jpg");
-//                 background-repeat: no-repeat;
-//                 background-attachment: fixed;
-//   background-position: 50% 50%;
-                &:hover img{
+
+                //                 background-image: url("https://preview.colorlib.com/theme/adopted/img/work_thumb_2.jpg");
+                //                 background-repeat: no-repeat;
+                //                 background-attachment: fixed;
+                //   background-position: 50% 50%;
+                &:hover img {
                     transform: scale(1.1);
                 }
 
@@ -208,13 +221,65 @@
                     position: relative;
                     z-index: -10 !important;
                 }
-                .opacity{
+
+                .opacity {
                     position: absolute;
                     z-index: 1;
                     width: 100%;
                     height: 100%;
                     background-color: black;
                     opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+
+#getNewsUpdates {
+    padding: 50px 0;
+    background-color: #e0e7ef;
+
+    .container {
+        form {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+
+            input {
+                max-width: 300px;
+                width: 100%;
+                height: 50px;
+                border-radius: 6px;
+            }
+
+            .nameInp {
+                padding-left: 20px;
+            }
+
+            .emailInp {
+                padding-left: 20px;
+            }
+
+            .btnInp {
+                background-color: orangered;
+                color: white;
+                border: none;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #getNewsUpdates {
+        .container {
+            form {
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+
+                input {
+                    max-width: 100% !important;
                 }
             }
         }

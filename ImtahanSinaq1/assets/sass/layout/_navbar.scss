@@ -114,6 +114,7 @@ header {
             .nav-respo{
                 display: none;
                 height: 0px;
+                transition: 0.5s;
                 overflow: hidden;
                 ul{
                     padding: 0;
