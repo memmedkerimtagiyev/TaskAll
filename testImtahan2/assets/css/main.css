@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+  list-style: none;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+nav .container .navContent {
+  border: solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+nav .container h1 {
+  font-size: 40px;
+  color: rgb(27, 136, 224);
+}
+nav .container .navlist ul {
+  display: flex;
+  gap: 30px;
+}
+nav .container .navlist ul li a {
+  color: black;
+  font-size: 20PX;
+}
+
+#OureService {
+  padding: 100px;
+}
+#OureService .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+#OureService .container h1 {
+  font-size: 50px;
+}
+#OureService .container hr {
+  width: 100px;
+}
+#OureService .container p {
+  text-align: center;
+  max-width: 600px;
+  font-size: 20px;
+  line-height: 24px;
+}
+#OureService .container .hostingCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+#OureService .container .hostingCards .cartContent {
+  padding: 20px 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+#OureService .container .hostingCards .cartContent img {
+  width: 100px;
+}
+#OureService .container .hostingCards .cartContent h3 {
+  font-size: 30px;
+}
+#OureService .container .hostingCards .cartContent p {
+  line-height: 30px;
+  opacity: 0.7;
+}
+
+#happy {
+  padding: 50px 0;
+  background-color: #7db9e8;
+}
+#happy .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+#happy .container h2 {
+  color: white;
+  font-size: 30px;
+}
+#happy .container hr {
+  width: 100px;
+  height: 3px;
+}
+#happy .container p {
+  color: white;
+  max-width: 700px;
+  text-align: center;
+}
+#happy .container .happyContent {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: white;
+}
+#happy .container .happyContent .happycard {
+  display: flex;
+  align-items: center;
+}
+#happy .container .happyContent .happycard i {
+  color: #7db9e8;
+  font-size: 40px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 50%;
+  border: 5px solid rgba(145, 144, 144, 0.342);
+}
+#happy .container .happyContent .happycard .hoppyText H3 {
+  font-size: 30px;
+  padding: 10px 10px;
+}
+#happy .container .happyContent .happycard .hoppyText p {
+  font-size: 25px;
+  padding: 10px 10px;
+}/*# sourceMappingURL=main.css.map */

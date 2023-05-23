@@ -20,34 +20,35 @@ openIcon.forEach((btn) => {
 });
 
 const childrenBox = document.querySelector(".childrenBox");
-const childBox = document.createElement("div");
-childBox.className = "childBox";
-const photo = document.createElement("div");
-photo.className = "photo";
-const img = document.createElement("img");
-img.tagName = "img";
-const nameyear = document.createElement("a");
-nameyear.tagName = "a";
-const year = document.createElement("span");
-year.tagName = "span";
 
-nameyear.innerText = "mursel,";
-year.innerText = "15 year old";
-img.setAttribute(
-  "src",
-  "https://preview.colorlib.com/theme/adopted/img/children_4.jpg"
-);
+fetch("https://northwind.vercel.app/api/products")
+  .then((res) => res.json())
+  .then((data) => {
+    data.forEach((element) => {
+      console.log(element);
 
-childBox.appendChild(photo);
-photo.appendChild(img);
-childBox.appendChild(nameyear);
-nameyear.appendChild(year);
-childrenBox.appendChild(childBox);
+      const childBox = document.createElement("div");
+      childBox.className = "childBox";
+      const photo = document.createElement("div");
+      photo.className = "photo";
+      const img = document.createElement("img");
+      img.tagName = "img";
+      const nameyear = document.createElement("a");
+      nameyear.tagName = "a";
+      const year = document.createElement("span");
+      year.tagName = "span";
 
-// fetch("https://northwind.vercel.app/api/products")
-//   .then((res) => res.json())
-//   .then((data) => {
-//     data.forEach((element) => {
-//       console.log(element);
-//     });
-//   });
+      nameyear.innerText = element.name;
+      year.innerText = "15 year old";
+      img.setAttribute(
+        "src",
+        "https://preview.colorlib.com/theme/adopted/img/children_4.jpg"
+      );
+
+      childBox.appendChild(photo);
+      photo.appendChild(img);
+      childBox.appendChild(nameyear);
+      nameyear.appendChild(year);
+      childrenBox.appendChild(childBox);
+    });
+  });

@@ -1,0 +1,27 @@
+nav{
+   .container{
+    .navContent{
+        border: solid;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+    }
+    h1{
+        font-size: 40px;
+        color: rgb(27, 136, 224);
+    }
+    .navlist{
+        ul{
+            display: flex;
+            gap: 30px;
+            li{
+                a{
+                    color: black;
+                    font-size: 20PX;
+                }
+            }
+        }
+    }
+   } 
+}
