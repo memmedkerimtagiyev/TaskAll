@@ -1,27 +1,65 @@
 nav{
    .container{
     .navContent{
-        border: solid;
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 100px;
+        h1{
+            font-size: 40px;
+            color: rgb(27, 136, 224);
+        }
+        .barIcon{
+            i{
+                font-size: 20px;
+                display: none;
+            }
+        }
+        .navlist{
+            ul{
+                display: flex;
+                gap: 30px;
+                li{
+                    a{
+                        color: black;
+                        font-size: 20PX;
+                    }
+                }
+            }
+        }
     }
-    h1{
-        font-size: 40px;
-        color: rgb(27, 136, 224);
-    }
-    .navlist{
+    .navResponsive{
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s;
         ul{
-            display: flex;
-            gap: 30px;
             li{
+                margin: 20px 0;
                 a{
                     color: black;
-                    font-size: 20PX;
+                    font-size: 14px;
                 }
             }
         }
     }
    } 
+}
+.openNavjs{
+    height: 300px !important;
+}
+@media screen and (max-width: 768px) {
+    nav{
+        .container{
+            .navContent{
+                .navlist{
+                    display: none;
+                }
+                .barIcon{
+                   i{
+                    display: block !important;
+                   }
+                }
+            }
+        }
+    }
 }

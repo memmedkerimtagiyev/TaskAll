@@ -1,3 +1,11 @@
+const barIcon=document.querySelector(".barIcon")
+
+barIcon.addEventListener(("click"),()=>{
+  const navResponsive=document.querySelector(".navResponsive")
+  navResponsive.classList.toggle("openNavjs")
+})
+
+
 const hostingCards = document.querySelector(".hostingCards");
 
 fetch("https://northwind.vercel.app/api/orders")

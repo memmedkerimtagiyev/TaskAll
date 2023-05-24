@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -19,23 +20,55 @@ ul li {
 }
 
 nav .container .navContent {
-  border: solid;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100px;
 }
-nav .container h1 {
+nav .container .navContent h1 {
   font-size: 40px;
   color: rgb(27, 136, 224);
 }
-nav .container .navlist ul {
+nav .container .navContent .barIcon i {
+  font-size: 20px;
+  display: none;
+}
+nav .container .navContent .navlist ul {
   display: flex;
   gap: 30px;
 }
-nav .container .navlist ul li a {
+nav .container .navContent .navlist ul li a {
   color: black;
   font-size: 20PX;
+}
+nav .container .navResponsive {
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+nav .container .navResponsive ul li {
+  margin: 20px 0;
+}
+nav .container .navResponsive ul li a {
+  color: black;
+  font-size: 14px;
+}
+
+.openNavjs {
+  height: 300px !important;
+}
+
+@media screen and (max-width: 768px) {
+  nav .container .navContent .navlist {
+    display: none;
+  }
+  nav .container .navContent .barIcon i {
+    display: block !important;
+  }
+}
+#bestWeb {
+  background-image: url("https://preview.colorlib.com/theme/drimo/drimo/img/banner/server-banner.jpg");
+  height: 100vh;
 }
 
 #OureService {

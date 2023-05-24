@@ -1,3 +1,9 @@
+#bestWeb {
+    background-image: url("https://preview.colorlib.com/theme/drimo/drimo/img/banner/server-banner.jpg");
+    height: 100vh;
+}
+
+
 #OureService {
     padding: 100px;
 
@@ -63,19 +69,22 @@
         align-items: center;
         gap: 50px;
 
-        h2{
+        h2 {
             color: white;
             font-size: 30px;
         }
-        hr{
+
+        hr {
             width: 100px;
             height: 3px;
         }
-        p{
+
+        p {
             color: white;
             max-width: 700px;
             text-align: center;
         }
+
         .happyContent {
             display: flex;
             width: 100%;
@@ -85,23 +94,26 @@
             .happycard {
                 display: flex;
                 align-items: center;
-                
-                i{color: #7db9e8;
+
+                i {
+                    color: #7db9e8;
                     font-size: 40px;
                     padding: 30px;
                     background-color: white;
                     border-radius: 50%;
                     border: 5px solid rgba(145, 144, 144, 0.342);
                 }
-                .hoppyText{
-                   H3{
+
+                .hoppyText {
+                    H3 {
                         font-size: 30px;
                         padding: 10px 10px;
-                   }
-                   p{
-                    font-size: 25px;
-                    padding: 10px 10px;
-                   }
+                    }
+
+                    p {
+                        font-size: 25px;
+                        padding: 10px 10px;
+                    }
                 }
             }
         }
